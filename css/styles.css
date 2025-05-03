@@ -39,6 +39,13 @@ ul,ol {
     margin: 0 auto;
 }
 
+.container-first {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
 .title-one {
     font-size: 56px;
     font-weight: 700;
@@ -997,6 +1004,7 @@ margin-bottom: 16px;
 
 .close-button:hover > svg, .close-button:focus > svg {
     fill: #ffffff;
+
 }
 
 .title-four {
