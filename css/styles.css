@@ -1026,8 +1026,12 @@ margin-bottom: 16px;
     .container {
             max-width: 100%;
             margin: 0 auto;
-            align-items: baseline;
+            align-items: center;
         }
+    .header-container {
+        align-items: center;
+        justify-content: space-between;
+    }
     .title-one {
         font-size: 36px;
     }
@@ -1041,10 +1045,7 @@ margin-bottom: 16px;
         display: none;
     }
     .menu-icon {
-        position: relative;
         fill: #2e2f42;
-        left: 16px;
-        top: 50%;
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1052,7 +1053,7 @@ margin-bottom: 16px;
     width: 100%;
     height: 100%;
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -1115,12 +1116,15 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding-right: 16px;
+    padding-left: 16px;
     }
 .logo-p {
     margin-bottom: 72px;
     width: 288px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
         }
  .logo-bottom {
     text-align: center;
@@ -1178,13 +1182,18 @@ margin-bottom: 16px;
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding-bottom: 16px;
     }
     .link {
         font-size: 12px;
     }
-    .nav {
-        padding-bottom: 24px;
+    .link-one {
+        display: block;
+    }
+    .menu-ic {
+        display: none;
+    }
+    .header-container {
+        align-items: center;
     }
 }
 
