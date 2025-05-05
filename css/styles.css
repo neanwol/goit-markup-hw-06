@@ -1137,6 +1137,8 @@ margin-bottom: 16px;
 
 }
 
+
+
 .title-four {
     color: #2E2F42;
     margin-bottom: 8px;
@@ -1172,7 +1174,6 @@ margin-bottom: 16px;
         margin: 0 auto;
     }
     .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-m.jpg);
         padding: 72px 0 72px 0;
         height: 432px;
     }
@@ -1200,11 +1201,23 @@ margin-bottom: 16px;
  }
 
 }
+.title {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/people-in-office-mf.jpg);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(46, 47, 66, 0.7);
+}
 
-@media (min-resolution:192dpi) {
-    .title {
-        background-image:linear-gradient rgba(46, 47, 66, 0.7), url(../images/people-office-m.jpg2x);
-    }
+@media (min-resolution: 2x) {
+.title {
+    background-image: linear-gradient(to bottom, rgba(46,47,66,0.7), rgba(46,47,66,0.7)), url(../images/mobile/people-in-office-ms.jpg) ;    
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1330,9 +1343,6 @@ margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
-    .title {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-t.jpg);
-        }
     .address-list {
         display: flex;
         flex-direction: column;
@@ -1349,6 +1359,17 @@ margin-bottom: 16px;
     }
     .header-container {
         align-items: center;
+    }
+    .title {
+        background-image: linear-gradient(to bottom, rgba(46,47,66,0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/people-in-office-tf.jpg);
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+}
+
+@media (min-resolution: 2x) {
+    .title {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/people-in-office-ts.jpg);
     }
 }
 
@@ -1446,5 +1467,13 @@ margin-bottom: 16px;
     .footer-ul {
         margin-right: 80px;
     }
-    
+        .title {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        }
+}
+
+@media (min-resolution: 2x) {
+    .title {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-b.jpg);
+    }
 }
